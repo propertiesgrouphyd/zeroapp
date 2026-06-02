@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Zero-Cost Global Reels</title>
+    <!-- Link to Step 4 Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Free WebAssembly Compression Engine CDN -->
+    <script src="https://unpkg.com"></script>
+    
+    <!-- Free Peer-to-Peer Routing Engine CDN -->
+    <script src="https://jsdelivr.net"></script>
+</head>
+<body>
+
+    <!-- Native Dynamic Creator Upload Control Button (+ Element) -->
+    <div class="upload-trigger-btn" id="plusButton" onclick="triggerDeviceCamera()">+</div>
+
+    <!-- Hidden Native Camera Video Capture Gateway -->
+    <!-- Locks input strictly to video arrays, forcing native device video camera loop launch -->
+    <input type="file" id="hiddenCameraInput" accept="video/*" capture="user" style="display: none;" onchange="processCapturedVideo(event)">
+
+    <!-- The Hardware-Accelerated Infinite Scrolling Feed Frame -->
+    <div class="feed-container" id="mainFeedDisplay">
+        
+        <!-- Welcome Staging Card: Hidden dynamically by app.js on network verification -->
+        <div class="reel-card" id="initialWelcomeCard">
+            <div class="status-overlay">
+                <h2>Connecting to Global Pool...</h2>
+                <p style="margin-top: 10px; font-size: 13px; color: #777777;">Initializing anonymous unique user verification tokens. Pull down or swipe to refresh feed elements.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Link to Step 3 Core Logic Engine -->
+    <script src="app.js"></script>
+</body>
+</html>
